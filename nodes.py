@@ -23,18 +23,10 @@ def printNode(node):
         node = node.next
 
     print(' -> '.join(values))
-
-    
+   
 
 node1 = ListNode(1, ListNode(3, ListNode(5)))
 node2 = ListNode(2, ListNode(4, ListNode(6)))
-
-
-print("\nSorted Linked List 1")
-printNode(node1)
-
-print("\nSorted Linked List 2")
-printNode(node2)
 
 
 class Solution:
@@ -74,14 +66,14 @@ class Solution:
 
         return dummy.next
 
+print("\nSorted Linked List 1")
+printNode(node1)
 
-        
+print("\nSorted Linked List 2")
+printNode(node2)
+
 merged_list = Solution().mergeNodes(node1, node2)
 
+    
 print("\nSorted Merged List")
 printNode(merged_list)
-        
-
-
-
-
