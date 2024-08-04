@@ -1,3 +1,5 @@
+# Problem 1 - Multiples of 3 & 5
+
 # Find the Sum, of all 3 & 5 Multiples Below 1000
 
 # Example: Below 10
@@ -25,6 +27,8 @@ for i in (range(1000)):
     # Check if Index Isn't Zero and If Index is a Multiple of 5.
     if i != 0 and i % 5 == 0:
         mult_3_5.append(i) 
+
+
 
 # Remove Duplicates Created From Common Multiples of 3 & 5
 while index < len((mult_3_5)) - 1:
