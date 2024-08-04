@@ -35,7 +35,7 @@ class Solution:
                 i += 1
         return len(nums)
 
-
+# Prints Answer
 print(Solution().removeElement(nums, val))
 
 
