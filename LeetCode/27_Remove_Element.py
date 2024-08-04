@@ -12,8 +12,6 @@ from typing import List # Hint
 nums = [0,1,2,2,3,0,4,2]
 val = 2
 
-
-
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
 
