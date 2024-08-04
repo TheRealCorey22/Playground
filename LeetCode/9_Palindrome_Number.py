@@ -1,4 +1,4 @@
-# Problem 1 - Palindrome Number
+# Problem 9 - Palindrome Number
 
 # Given an Integer, Check if it's the same forwards and backwards.
 
