@@ -11,7 +11,7 @@ from typing import List
 from math import inf
 
 # Test Input
-nums = [5,4,-1,7,8]
+nums = [10,-4,6,-4,3,5-2]
 
 
 
