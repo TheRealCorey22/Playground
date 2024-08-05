@@ -8,27 +8,55 @@
 # Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
 from typing import List
+from math import inf
+
+# Test Input
+nums = [5,4,-1,7,8]
 
 
-nums = [3,4,-3,2,-3]
 
 class Solution:
 
-    def maxSubArray(self, nums: List) -> int:
-    # Initialize current_sum and max_sum with the first element of the list
-        current_sum = nums[0]
-        max_sum = nums[0]
+    # Brute Force Method
+    def maxSubArray(self, nums: List[int]) -> int:
 
-        # Iterate through list starting from the second element
-        for num in nums[1:]:
+        # Initialize `ans` to a tiny value to ensure any sum found is larger
+        ans = -inf
 
-        # Update current_sum to become the maximum of num or current_sum + sum
-            current_sum = max(num, current_sum + num)
-    
-            # Update max_sum to be the maximum of max_sum or the current_sum
-            max_sum = max(max_sum, current_sum)
+        # Loop through each element of the list as the starting point of the subarray
+        for i in range(len(nums)):
+            # Initialize `cur_sum` to 0 for each starting point
+            cur_sum = 0
 
-            return(max_sum)
+            # Loop through each element from the starting point `i` to the end of the list
+            for j in range(i, len(nums)):
+                # Add the current element to `cur_sum`
+                cur_sum += nums[j]
+                
+                # Update `ans` to be the maximum of the current `ans` or `cur_sum`
+                ans = max(ans, cur_sum)
         
-# Prints Answer
+        # Return the maximum sum found
+        return ans
+    
+
+    # Kadane's Algorithm
+    def maxSubArrayKadane(self, nums:List) -> int:
+
+        cur_max, max_till_now = 0, -inf
+
+        for c in nums:
+
+            cur_max = max(c, cur_max + c)
+
+            max_till_now = max(max_till_now, cur_max)
+
+        return max_till_now
+
+
+# Prints Answer - Brute Force Method
 print(Solution().maxSubArray(nums))
+
+
+# Prints Answer - Brute Force Method
+print(Solution().maxSubArrayKadane(nums))
