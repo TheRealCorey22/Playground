@@ -12,11 +12,22 @@ from typing import List
 
 nums = [1,2,3,4]
 
-target = 4
+target = 6
 
 
 class Solution:
-    
+
+    def twoSumBrute(self, nums: List[int], target: int) -> List[int]:  # Brute Force Method
+
+        for i in range(len(nums)):
+
+            for j in range(len(nums)):
+
+                if nums[i] + nums[j] == target:
+                    return [i,j]
+                
+        return []
+ 
     def twoSumHash(self, nums: List[int], target: int) -> List[int]: # Hash Method
 
         
@@ -36,7 +47,11 @@ class Solution:
     
 
         return []
+    
 
+
+print(Solution().twoSumBrute(nums,target))
 
 print(Solution().twoSumHash(nums,target))
+
 
