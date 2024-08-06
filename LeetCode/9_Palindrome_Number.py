@@ -26,6 +26,7 @@ class Solution:
         else:
             return False
 
+
     def isPalindromeArithmetic(self, x:int) -> bool:  # Arithmetic Method
     
 
