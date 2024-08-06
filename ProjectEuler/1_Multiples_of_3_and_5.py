@@ -31,7 +31,6 @@ for i in (range(1000)):
         mult_3_5.append(i) 
 
 
-# Remove Duplicates Created From Common Multiples
 while index < len((mult_3_5)) - 1: 
 
     if mult_3_5[index] == mult_3_5[index+1]:
