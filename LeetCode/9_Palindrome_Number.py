@@ -11,7 +11,7 @@ x = 121
 
 class Solution:
     
-    def isPalindromeString(self, x: int) -> bool: # String Method
+    def isPalindromeString(self, x: int) -> bool:  # String Method
         
 
         x = str(x)
