@@ -7,42 +7,36 @@
 # Return [0,1]
 
 
-
-from typing import List # Hints
-
+from typing import List
 
 
-# Test Inputs
 nums = [1,2,3,4]
+
 target = 4
 
 
-
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    
+    def twoSumHash(self, nums: List[int], target: int) -> List[int]: # Hash Method
 
-        # Initializes Dictionary for Key-Pairs
+        
         hash_table = {}
 
 
-        # Iterates through Array & Assigns Index to Each Element Via Enumeration
         for index, num in enumerate(nums):
 
-            # Calculation to Create Key
             key = target - num
             
-            # Checks for Key in Table.
             if key in hash_table:
-                return [hash_table[key], index] # Returns Key's Corresponding Index and Current Elements Index
+
+                return [hash_table[key], index] 
             
-            # Adds Current Key-Pair to hash_table as it wasn't already found.
             else:
                 hash_table[num] = index 
+    
 
-        # Returns an Empty List Incase There's No Valid Answer.
         return []
 
 
-# Prints Solution
-print(Solution().twoSum(nums,target))
+print(Solution().twoSumHash(nums,target))
 

@@ -14,16 +14,14 @@
 # Example: IV = 4, VI = 6
 
 
-
-
-# Test Input
 s = 'XVI'
 
 
 class Solution:
+    
     def romanToInt(self, s: str) -> int:
         
-        # Key- Pairs
+
         numerals = {
                     'I': 1,
                     'V': 5,
@@ -34,34 +32,30 @@ class Solution:
                     'M': 1000,
                     }
         
-        # Initializing Variables
-        i = 0
-        total = 0
         
-        # While Index is Less than Out of Bounds
-        while i < len(s) - 1:
+        i = 0
+
+        total = 0
+
+        
+        while i < len(s) - 1:  # Prevents Out of Bounds
             
-            # Checks if Value at Current Index is Less than Value at Next Index
             if numerals[s[i]] < numerals[s[i+1]]:
 
-                total -= numerals[s[i]] # Decrements Total by Current Value
+                total -= numerals[s[i]]
                 
-                i += 1 # Increments Index
+                i += 1
 
             else:
 
-                total += numerals[s[i]] # Increments Total by Current Value
+                total += numerals[s[i]]
                 
-                i += 1 # Increments Index
-            
+                i += 1
 
-        # Increments Total By Current Value
-        # This accounts for the last element when exiting the While Loop
+
         total += numerals[s[i]]
 
-        # Returns Integer
         return total
         
 
-# Prints Answer
 print(Solution().romanToInt(s))

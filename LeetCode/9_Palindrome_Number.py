@@ -6,58 +6,46 @@
 # 123 isn't the same as 321, thusly isn't a palindrome.
 
 
-
-
-# Test Input
 x = 121
 
 
 class Solution:
-
-    # String Method
-    def isPalindromeString(self, x: int) -> bool:
+    
+    def isPalindromeString(self, x: int) -> bool: # String Method
         
-        # Converts Integer to String
+
         x = str(x)
         
-        # Reverses String Via Slicing
-        reverse_x = x[::-1]
+
+        reverse_x = x[::-1]  # Reverses Via Slicing
         
-        # Compares Original to Reversed
+
         if x == reverse_x:
             return True
 
         else:
             return False
-        
 
-
-
-    # Arithmetic Method
-    def isPalindromeArithmetic(self, x:int) -> bool:
+    def isPalindromeArithmetic(self, x:int) -> bool:  # Arithmetic Method
     
-        # Initializes Variavbles
+
         temp = x 
         reverse_x = 0
 
-        # Hedge Case - Negative Inputs Are Never Palindromes.
-        if x < 0:
+
+        if x < 0:  # Hedge Case: (-) Makes a String Asymmetrical.
             return False
 
-        # Loops Until Temp Becomes 0
+
         while temp != 0:
             
-            # Takes Last Number within Input and Assigns it to Digit.
-            digit = temp % 10
+            digit = temp % 10  # Gets Last Number of Integer
 
-            # Builds Number Back Up In Reverse.
-            reverse_x = reverse_x * 10 + digit
+            reverse_x = reverse_x * 10 + digit  # Builds New Integer
 
-            # Rounds Down Input Toward 0
-            temp //= 10
+            temp //= 10  # Allows Loop to Become 0
 
 
-        # Compares Original to Reversed
         if reverse_x == x:
             return True
         
@@ -65,13 +53,8 @@ class Solution:
             return False
 
 
-
-     
-# Prints Answer - String Method
 print(Solution().isPalindromeString(x))
 
-
-# Prints Answer - Arithmetic Method
 print(Solution().isPalindromeArithmetic(x))
 
 
