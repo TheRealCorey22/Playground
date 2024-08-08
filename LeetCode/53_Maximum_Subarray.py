@@ -22,7 +22,7 @@ class Solution:
 
         ans = -inf
 
-        
+
         for i in range(len(nums)):
 
             cur_sum = 0

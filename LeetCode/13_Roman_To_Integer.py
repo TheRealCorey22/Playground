@@ -21,7 +21,7 @@ class Solution:
     
     def romanToInt(self, s: str) -> int:
         
-
+        
         numerals = {
                     'I': 1,
                     'V': 5,

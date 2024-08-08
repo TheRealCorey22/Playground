@@ -14,7 +14,6 @@ class ListNode:
 
 def print_linked_list(head):
 
-    
     current = head
 
     
@@ -59,7 +58,6 @@ class Solution:
 
         
             current = current.next
-
 
 
         # Connect remaining Nodes
