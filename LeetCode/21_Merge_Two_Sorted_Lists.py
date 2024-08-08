@@ -8,29 +8,15 @@
 # Output:[1 -> 2 -> 3 -> 4 -> 5 -> 6]
 
 
+
+
 class ListNode:
     def __init__(self, value = 0, next = None):
         self.val = value
         self.next = next
 
 
-def print_linked_list(head):
-
-    current = head
-
-    
-    while current is not None:
-
-        print(current.val, end=" -> ")
-
-        current = current.next
-
-
-    print("None")
-
-
 list1 = ListNode(1 ,ListNode(3, ListNode(5)))
-
 list2 = ListNode(2 ,ListNode(4, ListNode(6)))
 
 
@@ -71,7 +57,19 @@ class Solution:
 
         
         return dummy.next
-                
+
+
+    def print_linked_list(head):
+        
+        current = head
+        
+        while current is not None:
+            
+            print(current.val, end=" -> ")
+            
+            current = current.next
+            
+            print("None")           
 
 print(Solution().mergeTwoLists(list1, list2))
 

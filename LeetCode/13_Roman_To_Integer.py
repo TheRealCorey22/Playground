@@ -21,7 +21,6 @@
 # Output: 6
 
 
-
 s = 'XVI'
 
 
