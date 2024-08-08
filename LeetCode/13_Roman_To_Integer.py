@@ -44,7 +44,7 @@ class Solution:
 
         total = 0
 
-        
+
         while i < len(s) - 1:
             
             if numerals[s[i]] < numerals[s[i+1]]:
