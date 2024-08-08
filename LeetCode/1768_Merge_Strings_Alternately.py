@@ -1,8 +1,15 @@
+# Problem 1768 - Merge Strings Alternately
+
+# Description:
+# Merge Two Strings Via Alteration.
+
+# Example: 
+# Input: string1['abc']  string2['pqr']
+# Output: apbqcr
 
 
 word1 = 'abc'
 word2 = 'pqrx'
-
 
 
 class Solution:
@@ -30,7 +37,7 @@ class Solution:
 
 
         if word1:
-            
+
             word3 += word1
 
         if word2:

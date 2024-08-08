@@ -1,18 +1,18 @@
 # Problem 53 - Maximum Subarray
 
+# Description:
 # Given an Array of Integers, find the Sum of the Largest Subarray.
-
 
 # Example: Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
 # Output: 6
 # Explanation: The subarray [4,-1,2,1] has the largest sum 6.
 
+
 from typing import List
 from math import inf
 
-# Test Input
-nums = [10,-4,6,-4,3,5-2]
 
+nums = [10,-4,6,-4,3,5-2]
 
 
 class Solution:

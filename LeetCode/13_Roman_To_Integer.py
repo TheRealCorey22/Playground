@@ -1,5 +1,6 @@
 # Problem 13 - Roman To Integer
 
+# Description:
 # Given a Roman Numeral, Convert it to an Integer.
 
 # Symbol       Value
@@ -11,7 +12,14 @@
 # D             500
 # M             1000
 
-# Example: IV = 4, VI = 6
+# Example 1:
+# Input: IV
+# Output: 4
+
+# Example 2:
+# Input: VI
+# Output: 6
+
 
 
 s = 'XVI'

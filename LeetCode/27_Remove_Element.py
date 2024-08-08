@@ -1,8 +1,10 @@
 # Problem 27 - Remove Element
 
+# Description:
 # Remove Value from Array(In-Place), Return n Nums that aren't equal to Value.
 
-# Example: input = [2,3,3,2], target = 3
+# Example:
+# Input: Array[2,3,3,2], target = 3
 # n = 2 [3,3]
 
 

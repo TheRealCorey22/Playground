@@ -1,8 +1,11 @@
 # Problem 14 - Longest Common Prefix
 
+# Description:
 # Given a List of Words, Find the Longest Common Prefix
 
-# Example: Flow, Flower, Flight = Fl
+# Example:
+# Input: Flow, Flower, Flight
+# Output: Fl
 
 
 from typing import List

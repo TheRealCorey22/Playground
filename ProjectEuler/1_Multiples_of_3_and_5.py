@@ -1,11 +1,13 @@
 # Problem 1 - Multiples of 3 & 5
 
+# Description:
 # Find the Sum, of all 3 & 5 Multiples Below 1000
 
-# Example: Below 10
+# Example: 
+# Below 10
 # Multiples of 3 = 3,6,9
-# Multiples of 10 = 5
-# Summation 3 + 5 + 6 + 9 = 23
+# Multiples of 5 = 5
+# Output: 23
 
 
 

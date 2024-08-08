@@ -1,10 +1,11 @@
 # Problem 1 - Two Sum
 
-# Given an Array of Numbers, Return the Indices of Numbers Which Add to Target Value.
+# Description:
+# Given an Array of numbers, return the indices whose values add to Target.
 
-# Example: Input = [1,4,3,3], Target = 5
-# 1 + 4 = 5
-# Return [0,1]
+# Example:
+# Input: Array[1,4,3,3], Target[5]
+# Output: [0,1]
 
 
 from typing import List
@@ -27,6 +28,7 @@ class Solution:
                     return [i,j]
                 
         return []
+ 
  
     def twoSumHash(self, nums: List[int], target: int) -> List[int]: # Hash Method
 

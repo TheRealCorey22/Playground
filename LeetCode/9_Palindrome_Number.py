@@ -1,9 +1,15 @@
 # Problem 9 - Palindrome Number
 
-# Given an Integer, Check if it's the same forwards and backwards.
+# Description:
+# Given an Integer, Check if its a Palindrome.
 
-# Example: 123 becomes 321
-# 123 isn't the same as 321, thusly isn't a palindrome.
+# Example 1:
+# Input: 123 
+# Output: False
+
+# Example 2:
+# Input: 121
+# Output: True
 
 
 x = 121
