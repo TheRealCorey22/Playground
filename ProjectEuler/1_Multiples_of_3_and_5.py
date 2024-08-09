@@ -9,13 +9,73 @@
 # Multiples of 5 = 5
 # Output: 23
 
+target = 1000
 
+
+class Solution:
+    
+    def multiples3And5(self, target:int) -> int:
+        
+
+        index = 0
+        
+        mult_3_5 = []
+        duplicates = []
+
+
+        for i in (range(target)):
+            
+
+            if i != 0 and i % 3 == 0:
+                
+                mult_3_5.append(i)
+                
+
+            if i != 0 and i % 5 == 0:
+                
+                mult_3_5.append(i) 
+                
+                
+        while index < len((mult_3_5)) - 1: 
+            
+
+            if mult_3_5[index] == mult_3_5[index+1]:
+                
+
+                duplicates.append(mult_3_5[index])
+                
+
+                index += 1
+
+
+            else:
+                
+                index += 1
+                
+
+        sum_mult_3_5 = sum(mult_3_5)
+
+
+        sum_duplicates = sum(duplicates)
+
+
+        total = sum_mult_3_5 - sum_duplicates
+        
+        
+        return total
+
+print(Solution().multiples3And5(target))
+
+
+
+
+# Raw
+"""
 mult_3_5 = []
 
 duplicates = []
 
 index = 0
-
 
 print("\n\n") # Give the Chef space to cook.
 
@@ -58,6 +118,6 @@ print(f"\n3 & 5 Multiples: {mult_3_5}")
 print(f"\nDuplicates: {duplicates}")
 
 print(f"\n\nFinal Answer: {total}")
-
+"""
 
 
