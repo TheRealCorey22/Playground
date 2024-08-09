@@ -27,9 +27,11 @@ class Solution:
 
 
             word3 += word1[0]
+            
             word1.pop(0)
 
             word3 += word2[0]
+            
             word2.pop(0)
 
         
