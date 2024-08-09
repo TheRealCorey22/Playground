@@ -23,13 +23,15 @@ class Solution:
         x = str(x)
         
 
-        reverse_x = x[::-1]  # Reverses Via Slicing
+        reverse_x = x[::-1]
         
 
         if x == reverse_x:
+            
             return True
 
         else:
+            
             return False
 
 
@@ -37,6 +39,7 @@ class Solution:
     
 
         temp = x 
+        
         reverse_x = 0
 
 
@@ -54,9 +57,11 @@ class Solution:
 
 
         if reverse_x == x:
+            
             return True
         
         else:
+            
             return False
 
 

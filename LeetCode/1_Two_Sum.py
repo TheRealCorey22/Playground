@@ -19,6 +19,7 @@ class Solution:
 
     def twoSumBrute(self, nums: List[int], target: int) -> List[int]:  # Brute Force Method
 
+
         for i in range(len(nums)):
 
             for j in range(len(nums)):
@@ -44,12 +45,12 @@ class Solution:
                 return [hash_table[key], index] 
             
             else:
+                
                 hash_table[num] = index 
     
 
         return []
     
-
 
 print(Solution().twoSumBrute(nums,target))
 

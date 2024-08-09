@@ -22,6 +22,7 @@ class Solution:
 
         i = 0
         
+        
         while i < len(nums):
             
             if nums[i] == val:

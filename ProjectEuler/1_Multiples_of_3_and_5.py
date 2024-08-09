@@ -4,12 +4,10 @@
 # Find the Sum, of all 3 & 5 Multiples Below 1000
 
 # Example: 
-# Below 10
+# Multiples of 3 & 5 Below 10
 # Multiples of 3 = 3,6,9
 # Multiples of 5 = 5
 # Output: 23
-
-
 
 
 mult_3_5 = []
