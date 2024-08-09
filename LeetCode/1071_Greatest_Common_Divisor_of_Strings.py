@@ -11,51 +11,35 @@
 # Input: string1['ABABAB'], string2['AB']
 # Output: "AB"
 
+from math import gcd
 
-str1 = 'ABABAB'
-str2 = 'ABAB'
 
-"""
+str1 = 'ABCABC'
+str2 = 'ABC'
+
+
 class Solution:
     
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         
+        if str1 + str2 != str2 + str1:
+            
+            return("")
+            
+        else:
+            
+            return(str1[:gcd(len(str1), len(str2))])
 
-       
+      
 print(Solution().gcdOfStrings(str1, str2))
-"""
 
 
 
 
-str1 = list(str1)
-
-str2 = list(str2)
-        
-while str1 and str2:
-    
-    if str1[0] == str2[0]:
-          
-          str1.pop(0)
-          
-          str2.pop(0)
-          
-    else:
-        
-        print("")
+  
 
 
-if str1:
-     
-     str1 = ''.join(str1)
-     
-     print(str1)
-    
 
-if str2:
-     
-     str2 = ''.join(str2)
-     
-     print(str2)
-    
+
+
 
